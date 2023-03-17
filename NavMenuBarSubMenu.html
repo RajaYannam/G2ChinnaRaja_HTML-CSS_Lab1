@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+
+header h1 {
+    background-color: red;
+    margin: 0%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.menu-styling{
+    list-style-type: none;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+  }
+
+/* .menu-styling-1{
+    list-style-type: none;
+    background-color: lightgray;
+    padding: 0;
+    margin: 0;
+  } */
+
+  /* #main-menu-1{
+
+  }
+  #main-menu-1 > li {
+    display: inline;
+  }
+  #main-menu-1 > li > a {
+    display: inline-block;
+    padding: 10px;
+
+    text-decoration: none;
+    color: white;
+  } */
+  
+  #main-menu {
+  }
+
+  #main-menu > li {
+    display: inline;
+  }
+  #main-menu > li > a {
+    display: inline-block;
+    padding: 10px;
+
+    text-decoration: none;
+    color: white;
+  }
+
+  #main-menu > li > a:hover{
+    background-color: black;
+  }
+
+  #main-menu-item-2{
+    position: relative;
+  }
+
+  #sub-menu-1{
+    position: absolute; 
+
+    top: 40px;
+    padding: 15px;
+    left: 0px;
+
+    /*
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+      padding-top
+    */
+    white-space: nowrap;
+
+    display: none;
+  }
+
+  #main-menu-item-2:hover #sub-menu-1{
+    display: block;
+  }
+  #main-menu-item-3{
+    position: relative;
+  }
+
+  #sub-menu-2{
+    position: absolute; 
+
+    top: 40px;
+    padding: 15px;
+    left: 0px;
+
+    /*
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+      padding-top
+    */
+    white-space: nowrap;
+
+    display: none;
+  }
+
+  #main-menu-item-3:hover #sub-menu-2{
+    display: block;
+  }
+
+
+
+</style>
+
+<body>
+    <!-- <nav>
+        <ul id="main-menu-1" class="menu-styling-1"></ul>
+    </nav> -->
+    <header><h1>Demo of DropDown</h1></header>
+  <nav>
+    <ul id="main-menu" class="menu-styling">
+      <li>
+        <a href="/link1">Link1</a>        
+      </li>
+      <li id="main-menu-item-2">
+        <a href="/link2">Link2</a> 
+        
+        <ul id="sub-menu-1" class="menu-styling">
+          <li>
+            <a href="/dd-link1">DD_Link_1</a>        
+          </li>
+          <li>
+            <a href="/dd-link2">DD_Link_2</a>   
+          </li>
+          <li>  
+            <a href="/dd-link3">DD_Link_3</a>        
+          </li>
+        </ul>
+
+      </li>
+
+      <li id="main-menu-item-3">
+        <a href="/link3">Link3</a> 
+        
+        <ul id="sub-menu-2" class="menu-styling">
+          <li>
+            <a href="/dd-link1">DD_Link_1</a>        
+          </li>
+          <li>
+            <a href="/dd-link2">DD_Link_2</a>   
+          </li>
+          <li>  
+            <a href="/dd-link3">DD_Link_3</a>        
+          </li>
+        </ul>
+
+      </li>
+    </ul>
+  </nav>
+  
+</body>
+</html>
